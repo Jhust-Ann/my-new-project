@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    /* box-sizing: border-box;   */
+    /* background-image: url(/image.jpg); */
+    background-size: cover; 
+    position: relative;
+    height: 100vh; /* Ensures the body takes up the full viewport height */
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+body::before {
+    content: "";
+    background-image: url('/image.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Applies a blur effect to the background image (adjust the value to control the intensity of the blur) */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places the pseudo-element behind the body content */
+}
+.div1{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.box{
+    border-radius: 10px;
+    box-shadow: 1px 1px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 350px;
+    height: 380px;
+    text-align: center;
+    border: 1px solid rgb(194, 184, 184);
+    background-color: rgb(232, 166, 166);
+    opacity: 0.8;
+}
+#hed{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Harlow Solid Italic;
+    margin-top: 10px;
+
+} 
+#int{
+    width:250px;
+    height: 30px;
+    margin: 20px 30px 10px 30px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border:1px solid rgba(216, 211, 211)
+}
+#a{
+    width:250px;
+    height: 30px;
+    margin: 20px 30px 10px 30px;
+    background-color: rgb(91, 91, 236);
+    padding: 0px;
+    border:1px solid rgba(216, 211, 211);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.fb{
+    text-decoration: none;
+}
+.box-a{
+   margin-top: 10px;
+   height: 80px;
+}
